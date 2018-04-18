@@ -1,12 +1,12 @@
 import React from "react";
 
-const FixedHeader = () => (
+const FixedHeader = (props) => (
     <nav className="navbar navbar-default navbar-fixed-top">
-        <div className="container">
-            <div className="navbar-header">
-                <a className="navbar-brand">Memory Game</a>
-            </div>
-        </div>
+        <ul>
+            <li>Memory Game</li>
+            <li>{props.response}</li>
+            <li>Score: {props.score} | Top Score: {props.topScore}</li>
+        </ul>
     </nav>
 )
 
