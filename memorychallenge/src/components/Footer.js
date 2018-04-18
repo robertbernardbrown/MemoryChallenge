@@ -1,11 +1,18 @@
 import React from "react";
 
 const Footer = () => (
-    <footer className="footer">
-        <div className="container">
-            Panel body
+<div className="container">
+    <div className="row">
+        <hr/>
+        <div className="col-lg-12">
+          <div className="col-md-8">
+          </div>
+          <div className="col-md-4">
+            <p className="muted pull-right">© 2013  Robert Brown. All rights reserved</p>
+          </div>
         </div>
-    </footer>
+    </div>
+</div>
 )
 
 export default Footer;
