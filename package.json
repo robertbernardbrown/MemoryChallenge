@@ -14,7 +14,7 @@
     "eject": "react-scripts eject",
     "deploy": "react-scripts build && gh-pages -d build"
   },
-  "homepage": "https://github.com/robertbernardbrown/MemoryChallenge",
+  "homepage": "https://github.com/robertbernardbrown/MemoryChallenge", 
   "devDependencies": {
     "gh-pages": "^1.1.0"
   }
