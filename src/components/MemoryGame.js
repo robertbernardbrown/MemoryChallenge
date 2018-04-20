@@ -24,8 +24,12 @@ class MemoryGame extends Component {
     }
 
     handleShuffle = () => {
+        let tempArr = this.state.dogArr.map(dog => {
+            let tempObj = {...dog};
+            return tempObj;
+        });
         this.setState({
-            dogArr: shuffleArray(this.state.dogArr)
+            dogArr: shuffleArray(tempArr)
         });
     }
 
@@ -52,7 +56,7 @@ class MemoryGame extends Component {
             <div>
                 <FixedHeader score={this.state.score} topScore={this.state.topScore} response={this.state.response}/>
                 <Header/>
-                <Card dogs={Dogs} handleGuess={this.handleGuess} handleShuffle={this.handleShuffle}/>
+                <Card dogs={this.state.dogArr} handleGuess={this.handleGuess} handleShuffle={this.handleShuffle}/>
                 <Footer/>
             </div>
         )
